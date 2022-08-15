@@ -1,0 +1,34 @@
+# baseURL
+@baseURL = http://localhost:1202
+
+###
+# Find All 
+GET {{ baseURL }}/todos
+
+###
+# Find By Id
+GET {{ baseURL }}/todos/62fa5ca474c68f8f0334f5a7
+
+###
+# Create
+POST {{ baseURL }}/todos
+Content-Type: application/json
+
+{
+    "title": "2",
+    "description": "description2"
+}
+
+###
+# Modify By Id
+PUT {{ baseURL }}/users/62fa5b6cee027a9a51fd58a8
+Content-Type: application/json
+
+{
+    "title": "title2",
+    "description": "description2"
+}
+
+###
+# Delete By Id
+DELETE {{ baseURL }}/users/1
