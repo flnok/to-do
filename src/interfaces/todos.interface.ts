@@ -1,7 +1,8 @@
 export interface Todo {
-  _id: String;
-  title: String;
-  description: String;
-  createdAt: String;
-  updatedAt: String;
+  _id: string;
+  title: string;
+  description: string;
+  isDone: boolean;
+  createdAt: string;
+  updatedAt: string;
 }
